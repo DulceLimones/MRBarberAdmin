@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MRBarberAdmin"
+        tools:targetApi="31">
+        <activity
+            android:name=".appointments.EditAppointmentActivity"
+            android:exported="false"
+            android:label="Editar cita"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".appointments.AddAppointmentActivity"
+            android:exported="false"
+            android:label="Agregar cita"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".barbers.EditBarberActivity"
+            android:exported="false"
+            android:label="Editar barbero"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".clients.EditClientsActivity"
+            android:exported="false"
+            android:label="Editar cliente"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".services.EditServicesActivity"
+            android:exported="false"
+            android:label="Editar servicio"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".clients.AddClientsActivity"
+            android:exported="false"
+            android:label="Agregar cliente"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".barbers.AddBarbersActivity"
+            android:exported="false"
+            android:label="Agregar barbero"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".services.AddServicesActivity"
+            android:exported="false"
+            android:label="Agregar servicio"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

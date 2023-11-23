@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clients.AddClientsActivity"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre (s)"/>
+    <EditText
+        android:id="@+id/first_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre (s)"
+        android:inputType="text"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"/>
+    <EditText
+        android:id="@+id/last_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:inputType="text"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"/>
+    <EditText
+        android:id="@+id/phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="numberDecimal"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <CheckBox
+        android:id="@+id/distinguished_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente distinguido"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <Button
+        android:id="@+id/add_client_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center"
+        android:padding="5dp"/>
+
+</LinearLayout>

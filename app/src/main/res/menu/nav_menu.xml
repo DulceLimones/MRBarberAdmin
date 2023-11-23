@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_appointments"
+            android:icon="@drawable/calendar_icon"
+            android:title="Citas"/>
+        <item
+            android:id="@+id/menu_barbers"
+            android:icon="@drawable/people_icon"
+            android:title="Barberos"/>
+        <item
+            android:id="@+id/menu_services"
+            android:icon="@drawable/services_icon"
+            android:title="Servicios"/>
+        <item
+            android:id="@+id/menu_clients"
+            android:icon="@drawable/person_icon"
+            android:title="Clientes"/>
+    </group>
+
+
+</menu>
